@@ -1,0 +1,48 @@
+<h2>Show alert</h2>
+
+<ul>
+
+  <li>
+    <strong>Time end:</strong>
+    <%= @alert.time_end %>
+  </li>
+
+  <li>
+    <strong>Location st:</strong>
+    <%= @alert.location_st %>
+  </li>
+
+  <li>
+    <strong>Location city:</strong>
+    <%= @alert.location_city %>
+  </li>
+
+  <li>
+    <strong>Locx:</strong>
+    <%= @alert.locx %>
+  </li>
+
+  <li>
+    <strong>Locy:</strong>
+    <%= @alert.locy %>
+  </li>
+
+  <li>
+    <strong>Hazard:</strong>
+    <%= @alert.hazard %>
+  </li>
+
+  <li>
+    <strong>Hazard type:</strong>
+    <%= @alert.hazard_type %>
+  </li>
+
+  <li>
+    <strong>Time start:</strong>
+    <%= @alert.time_start %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: alert_path(@conn, :edit, @alert) %>
+<%= link "Back", to: alert_path(@conn, :index) %>

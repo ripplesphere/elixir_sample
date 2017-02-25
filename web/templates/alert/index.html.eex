@@ -1,0 +1,40 @@
+<h2>Listing alerts</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Time end</th>
+      <th>Location st</th>
+      <th>Location city</th>
+      <th>Locx</th>
+      <th>Locy</th>
+      <th>Hazard</th>
+      <th>Hazard type</th>
+      <th>Time start</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for alert <- @alerts do %>
+    <tr>
+      <td><%= alert.time_end %></td>
+      <td><%= alert.location_st %></td>
+      <td><%= alert.location_city %></td>
+      <td><%= alert.locx %></td>
+      <td><%= alert.locy %></td>
+      <td><%= alert.hazard %></td>
+      <td><%= alert.hazard_type %></td>
+      <td><%= alert.time_start %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: alert_path(@conn, :show, alert), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: alert_path(@conn, :edit, alert), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: alert_path(@conn, :delete, alert), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New alert", to: alert_path(@conn, :new) %>
