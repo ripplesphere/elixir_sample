@@ -18,6 +18,9 @@ defmodule ElixirSample.Router do
 
     get "/", PageController, :index
     get "/road_closed", RoadClosedController, :index
+    get "/jam", JamController, :index
+    get "/weatherhazard", WeatherhazardController, :index
+    get "/accident", AccidentController, :index
     resources "/alerts", AlertController
   end
 
