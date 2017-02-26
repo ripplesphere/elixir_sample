@@ -7,7 +7,7 @@
 
   <div class="form-group">
     <%= label f, :time_end, class: "control-label" %>
-    <%= time_select f, :time_end, class: "form-control" %>
+    <%= datetime_select f, :time_end, class: "form-control" %>
     <%= error_tag f, :time_end %>
   </div>
 
@@ -49,7 +49,7 @@
 
   <div class="form-group">
     <%= label f, :time_start, class: "control-label" %>
-    <%= time_select f, :time_start, class: "form-control" %>
+    <%= datetime_select f, :time_start, class: "form-control" %>
     <%= error_tag f, :time_start %>
   </div>
 
