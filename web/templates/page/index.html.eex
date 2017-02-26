@@ -1,6 +1,12 @@
 <div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <h2>Metro Boston Waze Alert Data</h2>
+   <h3>Febuary 23, 2015 - March 02, 2015</h3>
 </div>
 
-
+<h3>Types of Hazards:</h3>
+<div class="list-group-horizontal">
+  <a href="/road_closed" class="list-group-item">ROAD_CLOSED</a>
+  <a href="/jam" class="list-group-item">JAM</a>
+  <a href="/weatherhazard" class="list-group-item">WEATHERHAZARD</a>
+  <a href="/accident" class="list-group-item">ACCIDENT</a>
+</ul>
