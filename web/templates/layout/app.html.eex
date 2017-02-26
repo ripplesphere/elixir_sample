@@ -15,6 +15,7 @@
     <div class="container">
       <header class="header">
         <span class="logo"></span>
+        <a href="/">Home</a>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

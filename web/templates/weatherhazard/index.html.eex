@@ -1,4 +1,4 @@
 <div class="jumbotron">
-  <h2>Hello World, Weatherhazard!</h2>
-   <%= @tot_num %>
+  <h2>Number of times weather hazard reported:</h2>
+   <h3><%= @tot_num %></h3>
 </div>

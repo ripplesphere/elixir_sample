@@ -1,4 +1,4 @@
 <div class="jumbotron">
-  <h2>Hello World, Accident!</h2>
-   <%= @tot_num %>
+  <h2>Number of times an accident was reported:</h2>
+   <h3><%= @tot_num %></h3>
 </div>
