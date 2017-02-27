@@ -17,6 +17,10 @@ defmodule ElixirSample.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/road_closed", RoadClosedController, :index
+    get "/jam", JamController, :index
+    get "/weatherhazard", WeatherhazardController, :index
+    get "/accident", AccidentController, :index
     resources "/alerts", AlertController
   end
 

@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <h2>Times an accident was reported: <%= @tot_num %></h2>
+   <ul class="list-group">
+   <%= for hazard_row <- @hazard_row do %>
+      <li class="list-group-item"><%= elem(hazard_row, 0) <> ": " <> elem(hazard_row, 1) %></li>
+   <% end %>
+   </ul>
+</div>

@@ -2,14 +2,14 @@ defmodule ElixirSample.Alert do
   use ElixirSample.Web, :model
 
   schema "alerts" do
-    field :time_end, Ecto.Time
+    field :time_end, Ecto.DateTime
     field :location_st, :string
     field :location_city, :string
     field :locx, :string
     field :locy, :string
     field :hazard, :string
     field :hazard_type, :string
-    field :time_start, Ecto.Time
+    field :time_start, Ecto.DateTime
 
     timestamps()
   end
