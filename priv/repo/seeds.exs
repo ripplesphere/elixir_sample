@@ -9,7 +9,9 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
-
+#
+# This is the command to create the alerts table:
+#   mix phoenix.gen.html Alert alerts time_end:datetime location_st:string location_city:string locx:string locy:string hazard:string hazard_type:string time_start:datetime
 alerts = File.read!("/home/george/mbta/waze_alerts.json") |> Poison.decode!() # this should probably be exsoda but the module failed in multiple locations when tests were run
 a_data = alerts["data"]
 
