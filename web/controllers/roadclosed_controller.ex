@@ -19,7 +19,7 @@ defmodule ElixirSample.RoadClosedController do
          query = from(a in Alert, 
                      select: {count(a.id)}, 
                      where: a.hazard_type == "ROAD_CLOSED" and a.hazard == ^hazard)
-         num_reported = Number.Delimit.number_to_delimited(elem(hd(Repo.all(query)), 0), precision: 0)
+         Number.Delimit.number_to_delimited(elem(hd(Repo.all(query)), 0), precision: 0)
          end
       )
 
